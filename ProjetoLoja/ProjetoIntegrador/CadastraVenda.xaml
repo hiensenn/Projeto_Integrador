@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="ProjetoIntegrador.CadastraCliente"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProjetoIntegrador"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="20" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+           
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="REGISTRO DE VENDA" FontSize="24" Foreground="#fff" FontWeight="ExtraLight" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="LISTA JOGOS" FontWeight="Regular"  HorizontalAlignment="Right" FontSize="15"  Margin="0,0,15,10" Foreground="#fff"/>
+        
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0">
+            
+           
+            <ComboBox x:Name="listaJogos_RegistroVenda"  VerticalAlignment="Center" Width="100" >
+                <ComboBoxItem Content="- Nome jogo -" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
+                <ComboBoxItem  Content="- Nome jogo -" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
+                <ComboBoxItem  Content="- Nome jogo -" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
+
+            </ComboBox>
+
+
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="NOME CLIENTE" FontWeight="Regular"  HorizontalAlignment="Right" FontSize="15"  Margin="0,0,15,10" Foreground="#fff"/>
+        <TextBox x:Name="nomeCliente_RegistroVenda" Grid.Row="2" Grid.Column="1" Width="250"  Background="#fff" FontSize="16" VerticalAlignment="Center"  HorizontalAlignment="Left" />
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="E-MAIL " FontWeight="Regular" HorizontalAlignment="Right" FontSize="15" Margin="0,0,15,10" Foreground="#fff"/>
+        <TextBox x:Name="email_RegistroVendas" Grid.Row="3" Grid.Column="1" Width="250" FontSize="16" VerticalAlignment="Center" Background="#fff" HorizontalAlignment="Left" />
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="CPF " FontWeight="Regular" HorizontalAlignment="Right" FontSize="15"  Margin="0,0,15,10" Foreground="#fff"/>
+        <TextBox x:Name="cpf_RegistroVendas" Grid.Row="4" Grid.Column="1" Width="250" FontSize="16" VerticalAlignment="Center" Background="#fff" HorizontalAlignment="Left" />
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="QUANTIDADE" FontWeight="Regular" HorizontalAlignment="Right" FontSize="15"  Margin="0,0,15,10" Foreground="#fff"/>
+        <TextBox x:Name="qtd_RegistroVendas" Grid.Row="5" Grid.Column="1" Width="250" FontSize="16" VerticalAlignment="Center" Background="#fff" HorizontalAlignment="Left" />
+
+        
+
+        <Button Grid.Row="9" Grid.Column="1" Width="200" Height="50" Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
+                FontSize="16" FontWeight="Regular" Content="REGISTRAR" Padding="10" BorderBrush="#fff" BorderThickness="1" Click="Button_Click" />
+    </Grid>
+    
+</UserControl>
