@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoIntegrador.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace ProjetoIntegrador
     /// </summary>
     public partial class CadastraJogo : UserControl
     {
-        
+        private LojaContexto contexto = new LojaContexto();
 
         public CadastraJogo()
         {
@@ -32,7 +33,7 @@ namespace ProjetoIntegrador
             int codigoJogo = int.Parse(codigoJogo_TextBox.Text);
             string tipoJogo = TipoJogo_ComboBox.Text;
             int quantidade = int.Parse(quantidadeJogo_TextBox.Text);
-            double valor = double.Parse(valorJogo_TextBox.Text);
+            decimal valor = decimal.Parse(valorJogo_TextBox.Text);
 
             string erro = "";
 
@@ -52,7 +53,7 @@ namespace ProjetoIntegrador
             {
                 erro += "Informar a quantidade \n";
             }
-            if(valor <= 0.0)
+            if(valor <= 0)
             {
                 erro += "Informar Valor \n";
             }
@@ -64,7 +65,15 @@ namespace ProjetoIntegrador
             }
             else
             {
-                //Chamar metodo para cadastrar o jogo
+                Jogo jogo = new Jogo();
+                jogo.NomeJogo = nomeJogo;
+                jogo.Descricao = tipoJogo;
+                jogo.Codigo = codigoJogo;
+                jogo.Preco = valor;
+                jogo.Quantidade = quantidade;
+
+                contexto.Jogo.Add(jogo);
+                contexto.SaveChanges();
 
                 // "Salvar" os dados
                 string mensagem = "Nome do jogo: " + nomeJogo + "\n" +

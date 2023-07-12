@@ -220,6 +220,7 @@
     <Compile Include="Estoque.xaml.cs">
       <DependentUpon>Estoque.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LojaContexto.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

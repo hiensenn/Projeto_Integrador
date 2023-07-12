@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjetoIntegrador.Class
 {
-    internal class Venda
+    [Table("Vendas")]
+    public class Vendas
     {
+        [Key]
+        [Column("Id_Jogo")]
+        public int Id_Jogo { get; set; }
+
+        public string Nome { get; set; }
+
+        public string Fabricante { get; set; }
     }
 }
