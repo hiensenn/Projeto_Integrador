@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjetoIntegrador.Class
 {
-    [Table("Jogo")]
+    [Table("Jogos")]
     public class Jogo
     {
         [Key]

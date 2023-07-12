@@ -210,7 +210,6 @@
     </Compile>
     <Compile Include="Class\Jogo.cs" />
     <Compile Include="Class\Venda.cs" />
-    <Compile Include="DataBase\Conexao.cs" />
     <Compile Include="EditarVenda.xaml.cs">
       <DependentUpon>EditarVenda.xaml</DependentUpon>
     </Compile>
