@@ -13,7 +13,7 @@ namespace ProjetoIntegrador
     public class LojaContexto : DbContext
     {
         public LojaContexto() :
-            base("server=localhost;database=sistemadecontroledevenda;user=hien;password=1qa2ws3ed")
+            base("server=192.168.40.22;database=sistemadecontroledevenda;Uid=teseu;Pwd=!Q1w2E3r4T5%")
         { }
 
         public DbSet<Vendas> Venda { get; set; }

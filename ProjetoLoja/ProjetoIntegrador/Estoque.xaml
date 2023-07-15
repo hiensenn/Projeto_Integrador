@@ -7,6 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="800">
     <Grid Margin="20" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="287*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -15,8 +19,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        
+        <DataGrid x:Name="dataGrid_Jogos" Grid.Row="5" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="dataGrid_Loaded" Grid.ColumnSpan="2" Margin="102,-252,84,131"/>
 
-     </Grid>
+
+
+    </Grid>
 </UserControl>

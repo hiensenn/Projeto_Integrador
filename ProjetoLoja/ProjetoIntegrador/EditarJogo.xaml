@@ -18,28 +18,17 @@
 
         <TextBlock Grid.Row="0" FontSize="24" FontWeight="Regular" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#fff">EDITAR JOGO</TextBlock>
 
-        <StackPanel Grid.Row="1"  HorizontalAlignment="Center" Margin="0,0,0,10">
-            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="#fff">ID Jogo:</TextBlock>
-            <TextBox Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
-
-        </StackPanel>
-
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0">
-            <TextBlock  FontSize="16"  HorizontalAlignment="Right" Foreground="#fff" Margin="10">OPÇÕES</TextBlock>
-            <ComboBox  VerticalAlignment="Center" Width="100" >
-                <ComboBoxItem Content="Editar Nome" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="Editar Código" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="Editar Tipo" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-
-            </ComboBox>
-
-
-        </StackPanel>
 
 
 
-        <Button Grid.Row="6"
-                Width="200" Height="50" Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
+
+        <Button Grid.Row="5"
+                Width="100" Height="50" Margin="208,130,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
                 FontSize="16" FontWeight="Regular" Content="EDITAR" Padding="10" BorderBrush="#fff" BorderThickness="1" />
+
+        <Button Grid.Row="5"
+                Width="100" Height="50" Margin="324,132,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
+                FontSize="16" FontWeight="Regular" Content="EXCLUIR" Padding="10" BorderBrush="#fff" BorderThickness="1" />
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,32,0,118" Grid.RowSpan="6"/>
     </Grid>
 </UserControl>

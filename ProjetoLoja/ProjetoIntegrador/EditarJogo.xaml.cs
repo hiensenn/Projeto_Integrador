@@ -30,5 +30,9 @@ namespace ProjetoIntegrador
 
         }
 
+        private void dataGrid_EditarJogo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
