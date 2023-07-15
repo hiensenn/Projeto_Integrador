@@ -149,7 +149,6 @@ C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\
 C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\ProjetoLoja\ProjetoIntegrador\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
 C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\ProjetoLoja\ProjetoIntegrador\bin\Debug\Microsoft.Extensions.Options.xml
 C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\ProjetoLoja\ProjetoIntegrador\bin\Debug\Microsoft.Extensions.Primitives.xml
-C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\ProjetoLoja\ProjetoIntegrador\bin\Debug\MySql.Data.xml
 C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\ProjetoLoja\ProjetoIntegrador\bin\Debug\MySql.EntityFrameworkCore.xml
 C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\ProjetoLoja\ProjetoIntegrador\bin\Debug\Renci.SshNet.xml
 C:\Users\Desenvolvimento\Desktop\Faculdade_Cesgranrio\periodo_4\LP3\ProjetoLoja\ProjetoLoja\ProjetoIntegrador\bin\Debug\System.Collections.Immutable.xml

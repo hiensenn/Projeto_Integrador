@@ -20,9 +20,18 @@ namespace ProjetoIntegrador
     /// </summary>
     public partial class Estoque : UserControl
     {
+        LojaContexto contexto = new LojaContexto();
         public Estoque()
         {
             InitializeComponent();
+        }
+
+        private void dataGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+            var lista = contexto.Jogo.Where(x => x.Id_Jogo > 0).ToList().AsReadOnly();
+            dataGrid_Jogos.ItemsSource = lista;
+
+            
         }
     }
 }

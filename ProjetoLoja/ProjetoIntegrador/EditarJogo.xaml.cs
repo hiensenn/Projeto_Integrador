@@ -34,6 +34,7 @@ namespace ProjetoIntegrador
 
         }
 
+<<<<<<< HEAD
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			LojaContexto lojaContexto  = new LojaContexto();
@@ -66,4 +67,11 @@ namespace ProjetoIntegrador
 
 		}
 	}
+=======
+        private void dataGrid_EditarJogo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+    }
+>>>>>>> 51270a080f95576d63b343e2dd41b9c359ec052a
 }
