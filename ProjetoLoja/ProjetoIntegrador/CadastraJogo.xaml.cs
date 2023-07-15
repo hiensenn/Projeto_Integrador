@@ -33,7 +33,7 @@ namespace ProjetoIntegrador
             int codigoJogo = int.Parse(codigoJogo_TextBox.Text);
             string tipoJogo = TipoJogo_ComboBox.Text;
             int quantidade = int.Parse(quantidadeJogo_TextBox.Text);
-            decimal valor = decimal.Parse(valorJogo_TextBox.Text);
+            double valor = double.Parse(valorJogo_TextBox.Text);
 
             string erro = "";
 
@@ -71,7 +71,6 @@ namespace ProjetoIntegrador
                 jogo.Codigo = codigoJogo;
                 jogo.Preco = valor;
                 jogo.Quantidade = quantidade;
-
                 contexto.Jogo.Add(jogo);
                 contexto.SaveChanges();
 

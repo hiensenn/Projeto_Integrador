@@ -30,14 +30,10 @@
         <TextBlock Grid.Row="1" Grid.Column="0" Text="LISTA JOGOS" FontWeight="Regular"  HorizontalAlignment="Right" FontSize="15"  Margin="0,0,15,10" Foreground="#fff"/>
         
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0">
-            
-           
-            <ComboBox x:Name="listaJogos_RegistroVenda"  VerticalAlignment="Center" Width="100" >
-                <ComboBoxItem Content="- Nome jogo -" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="- Nome jogo -" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="- Nome jogo -" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
 
-            </ComboBox>
+
+            <ComboBox x:Name="listaJogos_RegistroVenda" VerticalAlignment="Center" Width="100" Loaded="listaJogos_RegistroVenda_Loaded" />
+
 
 
         </StackPanel>

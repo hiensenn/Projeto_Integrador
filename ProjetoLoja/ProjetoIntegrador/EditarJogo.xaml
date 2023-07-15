@@ -7,7 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="20" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="719*"/>
+            <ColumnDefinition Width="41*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -16,30 +21,36 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" FontSize="24" FontWeight="Regular" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#fff">EDITAR JOGO</TextBlock>
+        <TextBlock Grid.Row="0" FontSize="24" FontWeight="Regular" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#fff" Width="144">EDITAR JOGO</TextBlock>
 
-        <StackPanel Grid.Row="1"  HorizontalAlignment="Center" Margin="0,0,0,10">
-            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="#fff">ID Jogo:</TextBlock>
-            <TextBox Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,10" Width="300">
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="#fff">Código Jogo:</TextBlock>
+            <TextBox x:Name="codigoTxt" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
 
-        </StackPanel>
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">Nome:</TextBlock>
+            <TextBox x:Name="NomeTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0">
-            <TextBlock  FontSize="16"  HorizontalAlignment="Right" Foreground="#fff" Margin="10">OPÇÕES</TextBlock>
-            <ComboBox  VerticalAlignment="Center" Width="100" >
-                <ComboBoxItem Content="Editar Nome" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="Editar Código" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="Editar Tipo" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">Quantidade:</TextBlock>
+            <TextBox x:Name="QuantidadeTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
 
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">Valor:</TextBlock>
+            <TextBox x:Name="ValorTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
+            <TextBlock Width="120" FontSize="16" FontWeight="ExtraLight" Foreground="#fff"><Run Text="Tipo de Jogo:"/></TextBlock>
+            <ComboBox x:Name="Descricao" Width="120" FontSize="16"  VerticalAlignment="Center">
+                <ComboBoxItem Content="Ação"/>
+                <ComboBoxItem Content="Aventura"/>
+                <ComboBoxItem Content="Estratégia"/>
+                <ComboBoxItem Content="Esporte"/>
+                <ComboBoxItem Content="Simulação"/>
+                <ComboBoxItem Content="RPG"/>
             </ComboBox>
-
-
         </StackPanel>
 
-
-
-        <Button Grid.Row="6"
-                Width="200" Height="50" Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
-                FontSize="16" FontWeight="Regular" Content="EDITAR" Padding="10" BorderBrush="#fff" BorderThickness="1" />
+        <Button Grid.Row="3"
+                Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#008B8B" Foreground="#fff"
+                FontSize="16" FontWeight="Regular" Content="EDITAR" Padding="10" BorderBrush="#fff" BorderThickness="1" Margin="69,0,0,0" Click="Button_Click_1" />
+        <Button Grid.Row="3"
+            Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#008B8B" Foreground="#fff"
+            FontSize="16" FontWeight="Regular" Content="DELETAR" Padding="10" BorderBrush="#fff" BorderThickness="1" Click="Button_Click" Margin="328,0,0,0" />
     </Grid>
 </UserControl>

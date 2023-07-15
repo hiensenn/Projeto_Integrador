@@ -7,7 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="20" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="379*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -16,30 +21,30 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" FontSize="24" FontWeight="Regular" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#fff">EDITAR VENDA</TextBlock>
+        <TextBlock Grid.Row="0" FontSize="24" FontWeight="Regular" HorizontalAlignment="Left" Margin="294,-4,0,24" Foreground="#fff" Grid.ColumnSpan="2" Width="159">EDITAR VENDA</TextBlock>
 
-        <StackPanel Grid.Row="1"  HorizontalAlignment="Center" Margin="0,0,0,10">
-            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center"  FontWeight="ExtraLight" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="#fff">CPF Cliente:</TextBlock>
-            <TextBox Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" BorderThickness="0,0,0,2"/>
+        <StackPanel HorizontalAlignment="Left" Margin="224,33,0,29" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="300">
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="#fff">CPF CLIENTE:</TextBlock>
+            <TextBox x:Name="CPF" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
 
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">Nome:</TextBlock>
+            <TextBox x:Name="NomeTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
+
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">Quantidade:</TextBlock>
+            <TextBox x:Name="QuantidadeTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
+
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">Valor:</TextBlock>
+            <TextBox x:Name="ValorTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
+
+            <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">E-mail:</TextBlock>
+            <TextBox x:Name="EmailTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
         </StackPanel>
-        
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0">
-            <TextBlock  FontSize="16"  HorizontalAlignment="Right" Foreground="#fff" Margin="10">OPÇÕES</TextBlock>
-            <ComboBox  VerticalAlignment="Center" Width="100" >
-                <ComboBoxItem Content="Editar Nome" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="Editar E-mail" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-                <ComboBoxItem  Content="Editar CPF" Padding="10" FontSize="13" Background="#008B8B" Foreground="#fff" BorderThickness="1"/>
-               
-            </ComboBox>
 
-
-        </StackPanel>
-
-       
-
-        <Button Grid.Row="6"
-                Width="200" Height="50" Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
-                FontSize="16" FontWeight="Regular" Content="EDITAR" Padding="10" BorderBrush="#fff" BorderThickness="1" />
+        <Button Grid.Row="5"
+                Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#008B8B" Foreground="#fff"
+                FontSize="16" FontWeight="Regular" Content="EDITAR" Padding="10" BorderBrush="#fff" BorderThickness="1" Margin="100,0,0,0" Click="Button_Click_1" />
+        <Button Grid.Row="5"
+            Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#008B8B" Foreground="#fff"
+            FontSize="16" FontWeight="Regular" Content="DELETAR" Padding="10" BorderBrush="#fff" BorderThickness="1" Grid.Column="1" Click="Button_Click" Margin="40,0,0,0" />
     </Grid>
 </UserControl>
