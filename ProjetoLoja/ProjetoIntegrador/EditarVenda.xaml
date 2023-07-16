@@ -46,5 +46,9 @@
         <Button Grid.Row="5"
             Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#008B8B" Foreground="#fff"
             FontSize="16" FontWeight="Regular" Content="DELETAR" Padding="10" BorderBrush="#fff" BorderThickness="1" Grid.Column="1" Click="Button_Click" Margin="40,0,0,0" />
+
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="2" Margin="224,20,0,0" FontSize="16" Foreground="White">
+            Edição e remoção com base no CPF do cliente.
+        </TextBlock>
     </Grid>
 </UserControl>

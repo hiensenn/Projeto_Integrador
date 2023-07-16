@@ -19,30 +19,29 @@ using System.Windows.Shapes;
 
 namespace ProjetoIntegrador
 {
-    /// <summary>
-    /// Interação lógica para EditarJogo.xam
-    /// </summary>
-    public partial class EditarJogo : UserControl
-    {
-        public EditarJogo()
-        {
-            InitializeComponent();
-        }
+	/// <summary>
+	/// Interação lógica para EditarJogo.xam
+	/// </summary>
+	public partial class EditarJogo : UserControl
+	{
+		public EditarJogo()
+		{
+			InitializeComponent();
+		}
 
-        private void OkClick(object sender, RoutedEventArgs e)
-        {
+		private void OkClick(object sender, RoutedEventArgs e)
+		{
 
-        }
+		}
 
-<<<<<<< HEAD
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			LojaContexto lojaContexto  = new LojaContexto();
+			LojaContexto lojaContexto = new LojaContexto();
 
 			int codigo = int.Parse((codigoTxt.Text));
-			
+
 			var context = lojaContexto.Jogo.FirstOrDefault(x => x.Codigo == codigo);
-            lojaContexto.Jogo.Remove(context);
+			lojaContexto.Jogo.Remove(context);
 			lojaContexto.SaveChanges();
 
 		}
@@ -51,8 +50,8 @@ namespace ProjetoIntegrador
 		{
 			LojaContexto lojaContexto = new LojaContexto();
 			var context = lojaContexto.Jogo.FirstOrDefault(x => x.NomeJogo == NomeTextBox.Text);
-			
-			if(context != null) 
+
+			if (context != null)
 			{
 				context.NomeJogo = NomeTextBox.Text;
 				context.Descricao = Descricao.Text;
@@ -62,16 +61,10 @@ namespace ProjetoIntegrador
 				lojaContexto.SaveChangesAsync();
 
 			}
-		
+
 
 
 		}
 	}
-=======
-        private void dataGrid_EditarJogo_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
-        }
-    }
->>>>>>> 51270a080f95576d63b343e2dd41b9c359ec052a
 }

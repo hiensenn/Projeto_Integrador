@@ -23,7 +23,6 @@
 
         <TextBlock Grid.Row="0" FontSize="24" FontWeight="Regular" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#fff" Width="144">EDITAR JOGO</TextBlock>
 
-<<<<<<< HEAD
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,10" Width="300">
             <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="#fff">Código Jogo:</TextBlock>
             <TextBox x:Name="codigoTxt" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
@@ -36,15 +35,18 @@
 
             <TextBlock Width="120" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,10" Foreground="#fff">Valor:</TextBlock>
             <TextBox x:Name="ValorTextBox" Width="300" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" />
-            <TextBlock Width="120" FontSize="16" FontWeight="ExtraLight" Foreground="#fff"><Run Text="Tipo de Jogo:"/></TextBlock>
-            <ComboBox x:Name="Descricao" Width="120" FontSize="16"  VerticalAlignment="Center">
-                <ComboBoxItem Content="Ação"/>
-                <ComboBoxItem Content="Aventura"/>
-                <ComboBoxItem Content="Estratégia"/>
-                <ComboBoxItem Content="Esporte"/>
-                <ComboBoxItem Content="Simulação"/>
-                <ComboBoxItem Content="RPG"/>
-            </ComboBox>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Width="120" FontSize="16" FontWeight="ExtraLight" Foreground="#fff">Tipo de Jogo:</TextBlock>
+                <ComboBox x:Name="Descricao" Width="120" FontSize="16" VerticalAlignment="Center">
+                    <ComboBoxItem Content="Ação"/>
+                    <ComboBoxItem Content="Aventura"/>
+                    <ComboBoxItem Content="Estratégia"/>
+                    <ComboBoxItem Content="Esporte"/>
+                    <ComboBoxItem Content="Simulação"/>
+                    <ComboBoxItem Content="RPG"/>
+                </ComboBox>
+            </StackPanel>
         </StackPanel>
 
         <Button Grid.Row="3"
@@ -53,19 +55,9 @@
         <Button Grid.Row="3"
             Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#008B8B" Foreground="#fff"
             FontSize="16" FontWeight="Regular" Content="DELETAR" Padding="10" BorderBrush="#fff" BorderThickness="1" Click="Button_Click" Margin="328,0,0,0" />
-=======
 
-
-
-
-        <Button Grid.Row="5"
-                Width="100" Height="50" Margin="208,130,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
-                FontSize="16" FontWeight="Regular" Content="EDITAR" Padding="10" BorderBrush="#fff" BorderThickness="1" />
-
-        <Button Grid.Row="5"
-                Width="100" Height="50" Margin="324,132,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#008B8B" Foreground="#fff"
-                FontSize="16" FontWeight="Regular" Content="EXCLUIR" Padding="10" BorderBrush="#fff" BorderThickness="1" />
-        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,32,0,118" Grid.RowSpan="6"/>
->>>>>>> 51270a080f95576d63b343e2dd41b9c359ec052a
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="2" Margin="0,20,0,0" FontSize="16" Foreground="White" HorizontalAlignment="Center">
+            Edição e remoção com base no código do jogo.
+        </TextBlock>
     </Grid>
 </UserControl>
